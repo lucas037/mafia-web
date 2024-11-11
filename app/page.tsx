@@ -23,8 +23,8 @@ export default function Home() {
       .then((response) => {
         if (response.ok) {
           response.json()
-            .then((data) => {
-              window.location.href = "/game"
+            .then(() => {
+              window.location.href = "/party"
             })
             .catch((error) => {
               console.log("Erro ao processar o corpo da resposta: " + error.message);
